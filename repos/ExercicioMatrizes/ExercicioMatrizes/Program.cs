@@ -6,6 +6,8 @@ namespace ExercicioMatrizes
     {
         static void Main(string[] args)
         {
+
+            // grava dados na matriz
             string[] a = Console.ReadLine().Split(" ");
 
             int[,] mat = new int[int.Parse(a[0]), int.Parse(a[1])];
@@ -16,13 +18,13 @@ namespace ExercicioMatrizes
 
                 for (int j = 0; j < int.Parse(a[1]); j++)
                 {
-
                     mat[i, j] = int.Parse(values[j]);
 
                 }
 
             }
 
+            // npumero a ser procurado na matriz
             int number = int.Parse(Console.ReadLine());
 
             // retorna posição do numero escolhido
